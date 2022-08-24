@@ -9,7 +9,7 @@ Dashboard
   <div class="section-header">
     <h1>Dashboard</h1>
   </div>
-
+  <users-component></users-component>
   <div class="section-body">
   </div>
 </section>
