@@ -18,6 +18,12 @@ Route::name('admin.')->prefix('admin')->middleware('auth')->group(function() {
     ]);
 });
 
+Route::get('IssueRegistry.')->prefix('admin')->middleware('auth')->group(function() {
+    Route::get('admin/project/IssueRegistryCreate', 'IssueRegistryController')->get('admin.Project.IssueRegistryCreate');
+});
+
+Route::get('/user', [UserController::class, 'index']);
+
 Route::middleware('auth')->get('logout', function() {
     Auth::logout();
     return redirect(route('login'))->withInfo('You have successfully logged out!');

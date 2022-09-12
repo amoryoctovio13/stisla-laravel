@@ -1,16 +1,16 @@
 @extends('layouts.admin-master')
 
 @section('title')
-Dashboard
+Create Issue
 @endsection
 
 @section('content')
 <section class="section">
   <div class="section-header">
-    <h1>Dashboard</h1>
+    <h1>Add User</h1>
   </div>
-    <users-component></users-component>
   <div class="section-body">
+      <issueregistry-component></issueregistry-component>
   </div>
 </section>
 @endsection
